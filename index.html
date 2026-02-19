@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poverty </title>
+    <style>
+        /* General Styles */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1200x600/2c3e50/ffffff?text=Poverty+Awareness');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 6rem 0;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+            background-color: var(--white);
+            border-bottom: 1px solid #eee;
+        }
+
+        section:nth-child(even) {
+            background-color: var(--light-bg);
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        /* Mobile specific grid adjustment */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .text-content {
+            padding: 1rem;
+        }
+
+        .image-content img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">Global Awareness</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#causes">Causes</a></li>
+                <li><a href="#effects">Effects</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#simulation">Simulation</a></li>
+                 <li><a href="#donation app">donation app</a></li>
+              
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Poverty </h1>
+            <p>Understanding the challenge is the first step towards solving it.</p>
+        </div>
+    </header>
+
+    <!-- Section 1: About Poverty -->
+    <section id="about">
+        <div class="container content-grid">
+            <div class="text-content">
+                <h2>What is Poverty?</h2>
+                <p>Poverty is not just about not having enough money. It is about a lack of basic human needs such as
+                    clean water, nutrition, healthcare, education, clothing, and shelter.</p>
+                <br>
+                <p>According to the World Bank, millions of people live on less than $2.15 a day. This is called
+                    "extreme poverty." It affects communities all over the world, limiting their ability to build a safe
+                    and stable future.</p>
+            </div>
+            <div class="image-content">
+                <!-- Placeholder Image 1 -->
+                <img src="https://placehold.co/600x400/3498db/ffffff?text=Basic+Needs"
+                    alt="Representation of basic needs">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Causes -->
+    <section id="causes">
+        <div class="container">
+            <h2>Causes of Poverty</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Lack of Education</h3>
+                    <p>Without access to schools and skills training, people cannot find good-paying jobs to support
+                        their families.</p>
+                </div>
+                <div class="card">
+                    <h3>Conflict & War</h3>
+                    <p>War destroys homes, businesses, and infrastructure, forcing people to leave everything behind and
+                        become refugees.</p>
+                </div>
+                <div class="card">
+                    <h3>Climate Change</h3>
+                    <p>Droughts, floods, and storms destroy crops and homes, hitting the poorest farmers the hardest.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Effects -->
+    <section id="effects">
+        <div class="container content-grid">
+            <div class="image-content">
+                <!-- Placeholder Image 2 -->
+                <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Impact" alt="Impact on community">
+            </div>
+            <div class="text-content">
+                <h2>The Effects</h2>
+                <ul>
+                    <li><strong>Health:</strong> Poor nutrition leads to illness and stunted growth in children.</li>
+                    <li><strong>Economy:</strong> When people cannot work, the whole country's economy suffers.</li>
+                    <li><strong>Social Inequality:</strong> Poverty creates a gap between the rich and poor, leading to
+                        unfairness in society.</li>
+                </ul>
+                <br>
+                <p>The cycle of poverty means that children born into poverty are likely to remain poor unless there is
+                    intervention.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Solutions -->
+    <section id="solutions">
+        <div class="container">
+            <h2>Possible Solutions</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>Ending poverty requires action from governments, organizations, and individuals.</p>
+                    <br>
+                    <h3>Key Actions:</h3>
+                    <ul>
+                        <li><strong>Quality Education:</strong> Ensuring every child attends school.</li>
+                        <li><strong>Access to Healthcare:</strong> Basic medical care for everyone.</li>
+                        <li><strong>Clean Water:</strong> Building wells and sanitation systems.</li>
+                        <li><strong>Fair Wages:</strong> Paying workers enough to live a decent life.</li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <!-- Placeholder Image 3 -->
+                    <img src="https://placehold.co/600x400/27ae60/ffffff?text=Solutions" alt="Growth and solutions">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Simulation -->
+    <section id="simulation">
+        <div class="container">
+            <h2>Scratch</h2>
+            <div class="scratch-container" style="display: flex; justify-content: center;" >
+
+                <iframe src="https://scratch.mit.edu/projects/1275223255/embed" width="600" height="500" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 School Project. Created to raise awareness.</p>
+    </footer>
+
+</body>
+
+</html>
+
+  <section id="donation app ">
+        <div class="donation">
+            <h2> code.org</Code></h2>
+            <div class="code.org" style="display: flex; justify-content: center;" >
+                 <iframe src="https://studio.code.org/projects/applab/aa5962bd-bfc1-47d6-9183-b529676a2883/embed" width="600" height="600" frameborder="0"
+                    allowfullscreen></iframe>
